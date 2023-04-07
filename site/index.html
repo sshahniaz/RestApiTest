@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="./jquery-3.6.4.min.js"></script> -->
+    <script src="./app.js" async></script>
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <h1>CRUD Application</h1>
+        <section class="main-bar">
+            <div class="tab">
+                <button id="getDat" class="button">Fetch All</button>
+            </div>
+
+            <div class="getProd">
+                <form action="" method="POST" id="getProduct">
+                    <label for="pID">Product ID: </label>
+                    <input type="text" name="pID" id="prodID" placeholder="Enter Product ID:" required />
+                    <input type="button" value="Submit" id="sub" class="button" />
+                </form>
+            </div>
+
+            <section class="search">
+                <form action="" method="post" id="searchForm">
+                    <label for="search">Search: </label>
+                    <input type="text" name="search" id="search" placeholder="Search product name.." required/>
+                    <input type="button" value="Search" id="subm" class="button" />
+                </form>
+            </section>
+        </section>
+
+        <section class="main-table" id="main-table">
+            <h1>Display Table</h1>
+            <table>
+                <thead>
+                    <th>Product ID</th>
+                    <th>Name</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+
+        <section class="main-form">
+            <form action="" id="main-form">
+                <h1>Form Add/Update</h1>
+                <label for="product_name">Name: </label>
+                <input type="text" name="product_name" id="product_name" />
+                <label for="unit_price">Unit Price: </label>
+                <input type="text" name="unit_price" id="unit_price" />
+                <label for="quantity">Quantity: </label>
+                <input type="text" name="quantity" id="quantity" />
+                <input type="button" value="Add" id="subIns" class="button" />
+                <input type="button" value="Update" id="update" disabled class="button" />
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

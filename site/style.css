@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1e4a;
+    color: #e3cc8d;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: 200px;
+    margin: auto;
+    align-items: center;
+    padding: 1em 1em;
+    border: 2px solid #e3cc8d;
+    border-radius: 12px;
+    row-gap: 1em;
+}
+
+.main-bar {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    font-size: 25px;
+    padding: 0.5em;
+    border-bottom: #e3cc8d 2px solid;
+}
+
+.main-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 1em 1em;
+    border: 2px solid #6c6144;
+}
+
+/* Utilities classes */
+.button {
+    background-color: #0e1e4a;
+    color: #e3cc8d;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid #e3cc8d;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #e3cc8d;
+    color: #0e1e4a;
+}
+
+.btn-del{
+    background-color: crimson;
+    color: #e3cc8d;
+    margin-left: 5px;
+}
+
+/* Input Fields */
+input[type=text] {
+    outline: none;
+    border: #6c6144 2px solid;
+    color: #e3cc8d;
+    background-color: #0e1e4a;
+    height: 3em;
+    width: 10em;
+}
+
+input[type=text]:focus{
+    color: #0e1e4a;
+    background-color: #e3cc8d;
+    border: 2px solid #e3cc8d;
+}
