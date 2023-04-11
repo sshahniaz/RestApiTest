@@ -60,7 +60,13 @@ body {
     color: #0e1e4a;
 }
 
-.btn-del{
+.button:disabled {
+
+    background-color: #946c00;
+    color: #0e1e4a;
+}
+
+.btn-del {
     background-color: crimson;
     color: #e3cc8d;
     margin-left: 5px;
@@ -76,7 +82,7 @@ input[type=text] {
     width: 10em;
 }
 
-input[type=text]:focus{
+input[type=text]:focus {
     color: #0e1e4a;
     background-color: #e3cc8d;
     border: 2px solid #e3cc8d;
